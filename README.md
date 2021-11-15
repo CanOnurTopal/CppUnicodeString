@@ -73,7 +73,7 @@ TODO
 # Compatibility/Portability
 I tried to make this class as portable as possible. However, there are a few assumptions. Most importantly:
 
-**1 byte (aka char) must be 8 bits.**
+**1 byte (aka char) must be at least 8 bits.** This is important if you are using non-standard extensions in your compiler.
 
 While this is true for almost all modern computers, this is not guaranteed by the C++ standard. I didn't try to force this since I don't think anyone will have an issue with this. If you do have a problem, feel free to contact me.
 
